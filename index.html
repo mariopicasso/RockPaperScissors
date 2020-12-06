@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body> 
+    
+    <!-- PRINCIPAL PAGE -->
+    <div id = "container">
+      <h1 id="title">ROCK PAPER SCISSORS</h1>
+      <div id="display">
+        <div id="human-selection"></div>
+        <div id="computer-selection"></div>
+      </div>
+      <div id="display-text">
+        <p id="text"></p>
+      </div>
+      
+      <div id="score" class="hidden">
+        <p class="marker-names">YOU</p>
+        <p id="score-text"></p>
+        <p class="marker-names">COMPUTER</p>
+      </div>
+      <p id="help-text">Choose your weapon</p>
+      <div id="options">
+        <div class="rock"></div>
+        <div class="paper"></div>
+        <div class="scissors"></div>
+      </div>
+    </div>
+    
+    <!-- FINAL MESSAGE. WIN OR LOSE, AND RESTART BUTTON-->
+    <div id="results" class="hidden"> <!--using hidden class to make not visible-->
+      <p id= "win-message"></p>
+      <div id="score-final">
+        <p class="marker-names">YOU</p>
+        <p id="score-text-final"></p>
+        <p class="marker-names">COMPUTER</p>
+      </div>
+      <div id="button-container">
+        <button id="restart">RESTART</button>
+      </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

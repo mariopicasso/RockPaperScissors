@@ -1,0 +1,233 @@
+body {
+  background-color: #0a0101;
+  font-family: "Bebas Neue", cursive;
+  color: whitesmoke;
+}
+
+/* REDEFINE CSS STD PROPERTIES */
+h1{
+  margin-block-end: 1.5rem;
+  margin-block-start: 0;
+}
+
+/* ID's */
+/* PRINCIPAL DIV */
+
+#container{
+  width: 85%;
+  max-width: 1248px;
+  margin: auto;
+  padding-top: 0;
+}
+
+#title {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 0;
+  color: #dcd74b;
+  padding-bottom: 0;
+}
+
+#display{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#human-selection, #computer-selection{
+  width: 150px;
+  height: 150px;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+}
+#display-text{
+  height: 2rem;
+}
+#text{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#score{
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#score-text{
+  font-size: 2rem;
+  flex-basis: 100%; /*this property is for make equal the space used by each element*/
+  text-align: center;
+  color: rgba(255, 162, 0, 0.962);
+}
+
+#help-text{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#options{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#options > div:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+/*RESULTS DIV*/
+
+#results{
+  width: 85%;
+  max-width: 1248px;
+  margin: auto;
+}
+#win-message{
+  font-size: 4.5rem;
+  text-align: center;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+#score-final{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#score-text-final{
+  font-size: 4rem;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+#button-container{
+  display: flex;
+  justify-content: center;
+}
+
+#restart{
+  height: 7rem;
+  width: 16rem;
+  
+  background-color: orange;
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+#restart:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+/* CLASSES */
+.rock {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(255, 240, 180);
+  background: url(img/rock.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.paper {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(255, 240, 180);
+  background: url(img/paper.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.scissors {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(255, 240, 180);
+  background: url(img/scissors.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.marker-names{
+  font-size: 2rem;
+  color: #dcd74b;
+  flex-basis: 100%; /*this property is for make equal the space used by each element*/
+  text-align: center;
+}
+
+/* ANIMATION */
+span{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+span.fade{
+  opacity: 1;
+}
+
+/*MEDIA QUERYS FOR RESPONSIVE DESIGN*/
+@media (max-width: 600px){
+  .rock {
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgb(255, 240, 180);
+    background: url(img/rock.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .paper {
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgb(255, 240, 180);
+    background: url(img/paper.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  .scissors {
+    width: 75px;
+    height: 75px;
+    border: 2px solid rgb(255, 240, 180);
+    background: url(img/scissors.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+  #human-selection, #computer-selection{
+    width: 75px;
+    height: 75px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+  }
+
+  #win-message{
+    font-size: 3rem;
+    text-align: center;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+  }
+
+  .marker-names{
+    font-size: 1.5rem;
+    color: #dcd74b;
+    flex-basis: 100%; /*this property is for make equal the space used by each element*/
+    text-align: center;
+  }
+
+  #score-text-final{
+    font-size: 2rem;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+
+}
