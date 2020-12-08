@@ -1,5 +1,4 @@
 # RockPaperScissors
-
-In this project I have learned: Javascript DOM manipulation. Simple text animation with Javascript. HTML and CSS.
+Things that I have learned in this project: Javascript DOM manipulation. CSS Flexbox. Simple text animation with Javascript. HTML and CSS.
   
   
